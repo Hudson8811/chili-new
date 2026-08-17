@@ -41,7 +41,7 @@ function localNameFor(url) {
   if (url.origin === startOrigin) {
     relative = parts.join('/');
   } else {
-    relative = ['_external', cleanSegment(url.hostname), ...parts].join('/');
+    relative = ['vendor', cleanSegment(url.hostname), ...parts].join('/');
   }
   if (!relative || url.pathname.endsWith('/')) relative = path.posix.join(relative, 'index.html');
   const ext = path.posix.extname(relative);
