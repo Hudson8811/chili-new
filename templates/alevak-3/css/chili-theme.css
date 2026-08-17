@@ -50,7 +50,8 @@ body.chili-theme {
 }
 
 .chili-theme .header .brand-link {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 330px;
   height: 72px;
 }
@@ -58,9 +59,9 @@ body.chili-theme {
 .chili-theme .header .logo img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .chili-theme .header .logo .menu-button {
@@ -413,17 +414,19 @@ body.chili-theme {
 }
 
 .chili-theme .footer-brand {
-  width: 340px;
-  height: 82px;
+  width: 330px;
+  max-width: 100%;
+  aspect-ratio: 330 / 71;
   overflow: hidden;
   background: var(--chili-white);
   border-radius: 5px;
 }
 
 .chili-theme .footer-brand img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .chili-theme .footer .contacts {
