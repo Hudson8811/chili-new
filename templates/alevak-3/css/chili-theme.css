@@ -685,6 +685,74 @@ body.chili-theme {
   border-color: var(--chili-red-dark);
 }
 
+.chili-theme .offer-modal {
+  width: min(960px, calc(100vw - 40px));
+  max-width: 960px !important;
+  padding: 52px 56px;
+  background: var(--chili-white);
+  border-top: 5px solid var(--chili-red);
+  border-radius: 10px;
+  color: var(--chili-ink);
+  box-shadow: 0 28px 80px rgba(0, 31, 61, 0.22);
+  vertical-align: top;
+}
+
+.chili-theme .offer-document {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.chili-theme .offer-document .offer-approval {
+  margin: 0 0 30px;
+  padding-right: 28px;
+  color: var(--chili-muted);
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: right;
+}
+
+.chili-theme .offer-document .offer-title {
+  margin: 0;
+  color: var(--chili-blue);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.12;
+  text-align: center;
+}
+
+.chili-theme .offer-document .offer-subtitle {
+  max-width: 620px;
+  margin: 12px auto 46px;
+  color: var(--chili-muted);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.chili-theme .offer-document h3 {
+  margin: 42px 0 18px;
+  padding: 14px 18px;
+  background: var(--chili-cream);
+  border-left: 4px solid var(--chili-red);
+  color: var(--chili-blue);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.chili-theme .offer-document p {
+  margin: 0 0 14px;
+  color: #263442;
+  font-size: 15px;
+  line-height: 1.68;
+}
+
+.chili-theme .offer-document strong {
+  color: var(--chili-blue);
+  font-weight: 800;
+}
+
 @media (max-width: 1050px) {
   .chili-theme .header {
     gap: 18px;
@@ -733,6 +801,36 @@ body.chili-theme {
 @media (max-width: 575px) {
   body.chili-theme {
     font-size: 16px !important;
+  }
+
+  .chili-theme .offer-modal {
+    width: calc(100vw - 32px);
+    padding: 34px 20px;
+  }
+
+  .chili-theme .offer-document .offer-approval {
+    margin-bottom: 22px;
+    font-size: 12px;
+  }
+
+  .chili-theme .offer-document .offer-title {
+    font-size: 26px;
+  }
+
+  .chili-theme .offer-document .offer-subtitle {
+    margin-bottom: 34px;
+    font-size: 16px;
+  }
+
+  .chili-theme .offer-document h3 {
+    margin-top: 32px;
+    padding: 12px 14px;
+    font-size: 17px;
+  }
+
+  .chili-theme .offer-document p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .chili-theme .header {
